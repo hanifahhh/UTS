@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UTS Salma</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"></script>
+   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    </script>
+
+    <style>
+        table {
+          font-family: 'Times New Roman';
+          border-collapse: collapse;
+          width: 20%;
+        }
+        
+        td,th{
+          border: 2px solid #000000;
+          text-align: left;
+          padding: 4px;
+        }
+
+        nav
+        {
+            list-style-type: none;
+            background-color: rgba(61, 61, 61, 0.861);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            right: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 21px;
+            padding: 15px 10%;
+            transition: 0.2s;
+            z-index: 1000;
+        }
+        
+        #map{
+            width: 960px;
+            height: 500px;
+            margin-top: 30px;
+            margin-left: 30px;
+        }
+        </style>
+</head>
+<body style="background-color: #d3d3d3dc;">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#" style="color:#000000"><b>SIGWEB</b></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="https://geodesi.ugm.ac.id/" target=_blank style="color:#000000">Home</a>
+                  <a class="nav-link" href="#esai" style="color:#000000">Esai</a>
+                </div>
+              </div>
+            </div>
+        </nav>
+
+    <div id="table">
+        <table>
+            <br>
+            <tr>
+              <th>Nama</th>
+              <th>Salma Hanun Hanifah</th>
+            </tr>
+            <tr>
+              <td>NIM</td>
+              <td>20/456168/TK/50298</td>
+            </tr>
+          </table>
+    </div>
+    <br>
+
+    <div id="esai">
+        <center>
+            <h5 style="color:blue"><b>Review Materi Praktikum SIGWEB</b></h5>
+        </center>
+        <p><b><u>Praktikum Sistem Informasi Geografis</u></b> merupakan salah satu mata kuliah yang menjelaskan terkait bagaimana cara menyajikan informasi geospasial
+            dalam sebuah <i>platform</i> yang dapat diakses oleh semua orang. Pada mata kuliah ini diajarkan terkait HTML <i>(Hypertext Markup Language)</i>,
+            CSS <i>(Cascading Style Sheet)</i>, dan JS <i>(Java Script)</i>. HTML merupakan bahasa markup, yaitu bahasa yang menunjukkan sebagai objek. HTML ini berperan
+            sebagai motor utama yang merupakan objeknya. Di dalam HTML biasanya dapat ditemui data vektor dan data raster. Selanjutnya CSS sebagai pengaturan <i>style</i>.
+            Dalam file CSS dilakukan pengaturan <i>style</i> pada tampilan <i>website</i> yang dirancang. CSS bisa dibuat dalam file terpisah yang kemudian akan dipanggil dalam
+            file HTML atau didefinisikan langsung pada file HTML yang disebut dengan pendefinisian <i>in line</i>. Kemudian JS merupakan file yang bertugas sebagai pengaturan aplikasi
+            misalnya seperti <i>pop up</i> atau lainnya sehingga website tampak lebih interaktif.
+        </p>
+        <p>
+            Dalam mata kuliah ini juga diajarkan terkait dengan <b>GitHub</b>. GitHub merupakan layanan repository Git dengan berbagai fungsionalitasnya ditambah dengan fungsi-fungsi
+            lain yang memperkaya manajemen kode pada Github. Dengan menggunakan GitHub, kita dapat mengupload hasil <i>coding</i> dari <i>website</i> yang kita buat. Selain itu, kita juga
+            dapat berpartisipasi dalam codingan yang dibuat oleh orang lain dengan menggunakan mekanisme <i><b>Forking</b></i>. Mekanisme <i>forking</i> merupakan salah satu fungsi GitHub
+            yang mana kita dapat mengambil <i>template</i> dari <i>developer</i> lain untuk kemudian dilakukan pembaruan atau penambahan fungsi sehingga tidak perlu membuat halaman web dari awal.
+            Mekanisme ini menggunakan aplikasi <b>Ubuntu</b> dan <b>Visual Studio Code</b> untuk melakukan <i>cloning</i>, <i>update</i>, dan pembaruan. Untuk lebih jelasnya, dapat melihat tutorial
+            yang ada pada link berikut <i><a href="https://www.danylaksono.com/panduan-webgis/1_persiapan/git-dan-github.html">Tutorial GitHub</a></i>.
+        </p>
+        <p>
+           Berikut merupakan salah satu hasil dari Praktikum Sistem Informasi Geografis berupa peta sederhana dari tempat favorit yang ada di UGM: 
+        </p>
+    </div>
+
+    <center>
+        <div id="map"></div>
+    </center>
+        <script>
+            var map = L.map('map',{
+            center: [-7.7760195,110.3734964],
+            zoom: 13
+            });
+    
+            L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+    
+            var loc1 = L.marker([-7.7672708,110.3793285]).bindPopup('Fakultas Kehutanan').addTo(map);
+            var loc2 = L.marker([-7.7688972,110.380616]).bindPopup('Lembah UGM').addTo(map);
+            var loc3 = L.marker([-7.7701682,110.3796878]).bindPopup('GSP').addTo(map);
+            var loc4 = L.marker([-7.7650339,110.3725332]).bindPopup('DTGD UGM').addTo(map);
+            var loc5 = L.marker([-7.7676544,110.3771585]).bindPopup('Perpustakaan Pusat').addTo(map);
+        </script>
+
+    <p style="color:blue">
+        Selain peta tersebut, beberapa hal yang telah dipelajari misalnya membangun halaman web menggunakan bantuan <a href='https://getbootstrap.com/'><i><b>Bootstrap</b></i></a> dan <a href='https://leafletjs.com/'><i><b style="color:red">LeafletJS</b></i></a>
+    </p>   
+    <div id="cek">
+        <h7 style="color:purple">Apakah anda sudah membaca keseluruhan?</h7>
+        <h7 style="color:purple">Ketik 'selesai' jika anda sudah membaca seluruhnya</h7>
+        <input type="password" id="password" style="margin-left: 25px; margin-bottom: 15px;">
+        <button onclick="klik()">Klik</button>
+    <script>
+        function klik() {
+            var password_input, password_check, text;
+            var password_check = "selesai";
+            password_input = document.getElementById("password").value;
+            
+            if (password_input === password_check) {
+                text = "Selesai!";
+                alert(text);
+            }
+
+            else {
+                text = "Error! Ayo baca lagi!"
+                alert(text);
+            }
+        }
+    </script>
+    </div>
+    <br>
+</body>
+</html>
